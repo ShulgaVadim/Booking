@@ -10,7 +10,7 @@ public class SortHotelsTest extends BaseTest {
 
         mainPage
                 .openPage()
-                .enterHotel("Milan")
+                .enterHotel("Minsk")
                 .enterDate("2021-01-20", "2021-01-21")
                 .clickSearch();
         searchHotelsPage

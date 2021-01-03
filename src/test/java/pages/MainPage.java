@@ -27,9 +27,6 @@ public class MainPage extends BasePage {
     @FindBy(css = ".sb-searchbox__button ")
     WebElement searchButton;
 
-    @FindBy(css = ".bui-price-display__value")
-    List<WebElement> prices;
-
     @FindBy(xpath = "//div[contains(@data-mode, 'checkout')]")
     WebElement checkoutDate;
 
