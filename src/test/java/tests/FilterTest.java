@@ -14,8 +14,8 @@ public class FilterTest extends BaseTest {
                 .clickSearch();
         searchHotelsPage
                 .isPageOpened()
-                .chooseYourBudget(159, 319)
-                .validatePriceFiltering(159, 319);
+                .chooseYourBudget(156, 313)
+                .validatePriceFiltering(156, 313);
     }
 
     @Test

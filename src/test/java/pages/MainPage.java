@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
@@ -16,12 +15,12 @@ import static org.testng.Assert.assertEquals;
 public class MainPage extends BasePage {
 
     String dateLocator = "//td[contains(@data-date,'%s')]";
-    String currency = "//span[contains(text(),'%s')]";
+    String currency = "//div[contains(text(),'%s')]";
 
     @FindBy(id = "ss")
     WebElement searchField;
 
-    @FindBy(xpath = "//li[@data-id='currency_selector']//a")
+    @FindBy(xpath = "//button[@data-modal-aria-label='Select your currency']/span/span[1]")
     WebElement currencyButton;
 
     @FindBy(css = ".sb-searchbox__button ")
